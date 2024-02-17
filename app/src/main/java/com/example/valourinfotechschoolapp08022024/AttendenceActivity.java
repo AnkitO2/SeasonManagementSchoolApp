@@ -61,12 +61,13 @@ private ActivityAttendenceBinding binding;
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         binding =ActivityAttendenceBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
         binding.studentId.setText(""+getIntent().getStringExtra("UserId"));
-        //StudentAttendenceDetail();
+        StudentAttendenceDetail();
 
     }
     private void StudentAttendenceDetail(){
