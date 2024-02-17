@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="MenuBar"
+        android:id="@+id/item"
+        android:icon="@drawable/menu_icon"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/item1"
+                android:title="Student Leave Application"
+                app:showAsAction="never">
+            </item>
+            <item android:title="Student Holiday Calender"
+                android:id="@+id/item2"
+                app:showAsAction="never"
+                />
+            <item android:title="Student Fees Submission"
+                android:id="@+id/item3"
+                app:showAsAction="never"
+                />
+            <item android:title="Student Attendence Detail"
+                android:id="@+id/item4"
+                app:showAsAction="never"/>
+            <item android:title="Logout"
+                android:id="@+id/item5"
+                />
+        </menu>
+    </item>
+
+
+</menu>
