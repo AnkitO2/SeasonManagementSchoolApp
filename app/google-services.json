@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "708326308075",
+    "project_id": "imagepicker-12022",
+    "storage_bucket": "imagepicker-12022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708326308075:android:5f3210f1731b95fabf26ae",
+        "android_client_info": {
+          "package_name": "com.example.valourinfotechschoolapp08022024"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3Oq7Myp5fTUDgsm6LxcjAkrFF_J20PEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
