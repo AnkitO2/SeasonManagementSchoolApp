@@ -52,8 +52,8 @@ SharedPreferences sharedPreferences;
             startActivity(intent);
         } else if (id ==R.id.item4) {
             Intent intent = new Intent(AttendenceActivity.this,MainActivity.class);
-            intent.putExtra("UserId",""+getIntent().getStringExtra("UserId"));
            // StudentAttendenceDetail();
+            intent.putExtra("UserId",""+getIntent().getStringExtra("UserId"));
             startActivity(intent);
         } else if (id==R.id.item5) {
             Intent intent = new Intent(AttendenceActivity.this, LoginActitiy.class);
@@ -63,7 +63,6 @@ SharedPreferences sharedPreferences;
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         binding =ActivityAttendenceBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -83,9 +82,12 @@ SharedPreferences sharedPreferences;
                 if (response.isSuccessful()){
                     Log.d("Response", "Body: " + response.body().toString());
                     List<StudentAttendenceDetail>list = response.body().getStudentAttendenceDetail();
+
+                    binding.studentId.setText(""+getIntent().getStringExtra("UserId"));
                     binding.AttDated1.setText(list.get(0).getAttDated());
-                    binding.AttStatus1.setText(list.get(0).getAttStatus());
-                    binding.AttDated2.setText(list.get(0).getAttDated());
+                    binding.AttStatus1.setText(list.get(1).getAttStatus());
+                    binding.AttDated2.setText(list.get(2).getAttDated());
+                    binding.AttStatus2.setText(list.get(3).getAttStatus());
 
                 }
                 else {

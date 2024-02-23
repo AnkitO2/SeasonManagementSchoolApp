@@ -13,20 +13,21 @@
             </item>
             <item android:title="Student Holiday Calender"
                 android:id="@+id/item2"
-                app:showAsAction="never"
-                />
+                app:showAsAction="never" />
             <item android:title="Student Fees Submission"
                 android:id="@+id/item3"
-                app:showAsAction="never"
-                />
+                app:showAsAction="never" />
             <item android:title="Student Attendence Detail"
                 android:id="@+id/item4"
                 app:showAsAction="never"/>
+            <item android:title="Image Activity"
+                android:id="@+id/item6"
+                app:showAsAction="never"/>
             <item android:title="Logout"
                 android:id="@+id/item5"
-                />
+                app:showAsAction="never"/>
+
+
         </menu>
     </item>
-
-
 </menu>

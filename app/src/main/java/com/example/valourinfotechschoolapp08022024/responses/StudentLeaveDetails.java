@@ -4,6 +4,12 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class StudentLeaveDetails {
+    @SerializedName("FromDate")
+    @Expose
+    private String fromDate;
+    @SerializedName("ToDate")
+    @Expose
+    private String toDate;
     @SerializedName("LeaveDays")
     @Expose
     private String leaveDays;
@@ -37,4 +43,19 @@ public class StudentLeaveDetails {
     public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
+    public String getFromDate() {
+        return fromDate;
+    }
+
+    public void setFromDate(String fromDate) {
+        this.fromDate = fromDate;
+    }
+    public String getToDate() {
+        return toDate;
+    }
+
+    public void setToDate(String toDate) {
+        this.toDate = toDate;
+    }
+
 }

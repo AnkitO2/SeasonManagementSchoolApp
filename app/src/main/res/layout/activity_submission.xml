@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
        android:orientation="vertical"
+    android:background="#000000"
     tools:context=".SubmissionActivity">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            app:titleTextColor="@color/white"
+            app:titleTextColor="#000000"
+            android:background="#FFFFFF"
             android:layout_width="match_parent"
-            android:background="@drawable/valourlogowithname"
-
-            android:layout_height="?attr/actionBarSize"/>
+            app:title="Student Fees Submission"
+            android:layout_height="40dp"/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Student Fees Submission"
-        android:textColor="#283A49"
+        android:textColor="#fff"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:id="@+id/Student"
@@ -42,7 +43,7 @@
             android:layout_weight="1"
             android:text="Name "
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -52,7 +53,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text="Value"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -70,7 +71,7 @@
             android:layout_weight="1"
             android:text="Approve Status"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -80,7 +81,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -99,7 +100,7 @@
             android:layout_weight="1"
             android:text="ClasS Name"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -109,8 +110,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -129,7 +129,7 @@
             android:layout_weight="1"
             android:text="Fee Amount"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -139,8 +139,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
-
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -159,7 +158,7 @@
             android:layout_weight="1"
             android:text="Fee type Name"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -168,9 +167,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:layout_weight="1"
-
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -189,7 +187,7 @@
             android:layout_weight="1"
             android:text="Fin year"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -199,7 +197,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -218,7 +216,7 @@
             android:layout_weight="1"
             android:text="Late Fee Paid"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -228,7 +226,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -247,7 +245,7 @@
             android:layout_weight="1"
             android:text="Pay Trans Id"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -257,7 +255,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -276,7 +274,7 @@
             android:layout_weight="1"
             android:text="Payment Date"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -286,7 +284,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -304,7 +302,7 @@
             android:layout_weight="1"
             android:text="Payment Head"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -314,7 +312,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -332,7 +330,7 @@
             android:layout_weight="1"
             android:text="Payment Mode"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -342,7 +340,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -360,7 +358,7 @@
             android:layout_weight="1"
             android:text="Section Name"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -370,7 +368,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -388,7 +386,7 @@
             android:layout_weight="1"
             android:text="Student Id"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -398,7 +396,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -416,7 +414,7 @@
             android:layout_weight="1"
             android:text="Student Name"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -426,7 +424,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -444,7 +442,7 @@
             android:layout_weight="1"
             android:text="Total Paid"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -454,7 +452,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>

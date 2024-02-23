@@ -13,7 +13,12 @@ public class StudentLeaveRequest {
     @SerializedName("LeaveDays")
     @Expose
     private String leaveDays;
-
+    @SerializedName("FromDate")
+    @Expose
+    private String fromDate;
+    @SerializedName("ToDate")
+    @Expose
+    private String toDate;
     public String getStudentId() {
         return studentId;
     }
@@ -37,4 +42,20 @@ public class StudentLeaveRequest {
     public void setLeaveDays(String leaveDays) {
         this.leaveDays = leaveDays;
     }
+    public String getFromDate() {
+        return fromDate;
+    }
+
+    public void setFromDate(String fromDate) {
+        this.fromDate = fromDate;
+    }
+
+    public String getToDate() {
+        return toDate;
+    }
+
+    public void setToDate(String toDate) {
+        this.toDate = toDate;
+    }
+
 }

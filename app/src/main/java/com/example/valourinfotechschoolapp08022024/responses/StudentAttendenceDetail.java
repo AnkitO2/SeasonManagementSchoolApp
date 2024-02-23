@@ -3,7 +3,7 @@ package com.example.valourinfotechschoolapp08022024.responses;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class StudentAttendenceDetail {
+public class  StudentAttendenceDetail {
     @SerializedName("AttDated")
     @Expose
     private String attDated;

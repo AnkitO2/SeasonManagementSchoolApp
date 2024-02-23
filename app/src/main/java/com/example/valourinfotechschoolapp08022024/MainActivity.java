@@ -80,6 +80,9 @@ public class MainActivity extends AppCompatActivity {
             editor.putString("loginStatus","");
             editor.apply();
             startActivity(intent);
+        } else if (id==R.id.item6) {
+            Intent intent =new Intent(MainActivity.this , ImageActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
@@ -108,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
                                         "Gurdian Name  :"+response.body().getStudentHomePageAndDashboard().getGuardianName() +"\n"+
                                         "Gender  :"+response.body().getStudentHomePageAndDashboard().getGender() +"\n"+
                                         "Category  :"+response.body().getStudentHomePageAndDashboard().getCategory() +"\n");
+
                                         Username=response.body().getStudentHomePageAndDashboard().getStudentName();
                                         Classname=response.body().getStudentHomePageAndDashboard().getClassName();
                 } else{

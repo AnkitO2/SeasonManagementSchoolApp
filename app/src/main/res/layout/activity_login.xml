@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="#4DC861"
+    android:background="@drawable/back8"
     tools:context=".LoginActitiy">
 
     <ImageView
@@ -18,8 +18,7 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_purple"
-        android:background="#666e68"
+        android:backgroundTint="#446675"
         app:cardUseCompatPadding="true"
         app:cardElevation="10dp"
         app:cardCornerRadius="10dp"

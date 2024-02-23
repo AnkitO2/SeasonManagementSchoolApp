@@ -10,7 +10,6 @@ public class StudentAttendenceDetailRequest {
     @SerializedName("StudentId")
     @Expose
     private String studentId;
-    private final static long serialVersionUID = 7773972750439498434L;
 
     public String getFinYear() {
         return finYear;

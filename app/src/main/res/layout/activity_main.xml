@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back9"
     android:orientation="vertical"
     tools:context=".MainActivity">
     <com.google.android.material.appbar.AppBarLayout
@@ -11,9 +12,11 @@
         android:layout_height="wrap_content">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
+            app:title="Student Dashboard"
+            app:titleTextColor="#000000"
+            android:background="#FFFFFF"
             android:layout_width="match_parent"
-            android:background="@drawable/valourlogowithname"
-            android:layout_height="?attr/actionBarSize"/>
+            android:layout_height="40dp"/>
     </com.google.android.material.appbar.AppBarLayout>
     <TextView
         android:id="@+id/year"
@@ -44,10 +47,16 @@
         android:id="@+id/txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#050000"
+        android:textColor="#fff"
         android:layout_margin="20dp"
         android:textStyle="bold"/>
-
+    <TextView
+        android:id="@+id/txtEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        android:textStyle="bold"/>
 
 
     <LinearLayout
@@ -64,7 +73,7 @@
             android:layout_weight="1"
             android:text="Student Id"
             android:textStyle="bold"
-            android:textColor="#000000"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -74,7 +83,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="#000000"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -92,7 +101,7 @@
             android:layout_weight="1"
             android:text="Registration Date"
             android:textStyle="bold"
-            android:textColor="#000000"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -102,7 +111,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="#000000"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -120,7 +129,7 @@
             android:layout_weight="1"
             android:text="Class Name"
             android:textStyle="bold"
-            android:textColor="#000000"
+            android:textColor="#fff"
             android:textSize="16sp" />
 
         <TextView
@@ -130,7 +139,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="#000000"
+            android:textColor="#fff"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -148,7 +157,7 @@
             android:layout_weight="1"
             android:text="Student Name"
             android:textStyle="bold"
-            android:textColor="#000000"
+            android:textColor="#fff"
             android:textSize="16sp" />
         <TextView
             android:id="@+id/txtId4"
@@ -157,7 +166,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text=""
-            android:textColor="#000000"
+            android:textColor="#fff"
             android:textSize="12sp" />
     </LinearLayout>
 </LinearLayout>

@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import com.example.valourinfotechschoolapp08022024.databinding.ActivityCalenderBinding;
@@ -18,6 +19,7 @@ import com.example.valourinfotechschoolapp08022024.responses.StudentHolidayCalen
 import com.example.valourinfotechschoolapp08022024.retrofit.RetrofitClient;
 import com.google.gson.JsonObject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -42,7 +44,7 @@ private ActivityCalenderBinding binding;
         else if (id==R.id.item2) {
             Intent intent = new Intent(CalenderActivity.this,MainActivity.class);
              intent.putExtra("UserId",""+getIntent().getStringExtra("UserId"));
-             HolidayCalender();
+             //HolidayCalender();
             startActivity(intent);
         }
         else if (id == R.id.item3) {
@@ -80,6 +82,15 @@ private ActivityCalenderBinding binding;
                 if (response.isSuccessful()){
                     Log.d("Response", "Body: " + response.body().toString());
                     List<StudentHolidayCalender>list = response.body().getStudentHolidayCalender();
+
+                    List<String> dropLis=new ArrayList<>();
+                    dropLis.add("Please Select Item");
+                    for (int i=0;i<list.size(); i++){
+                        dropLis.add(""+list.get(i).getHolidayDate()+"/"+list.get(i).getHolidayName());
+                    }
+                  ArrayAdapter<String>dropAdapter=new ArrayAdapter<>(CalenderActivity.this, android.R.layout.simple_spinner_dropdown_item,dropLis);
+                    binding.dropdownMenu.setAdapter(dropAdapter);
+
                     binding.studentId.setText(""+getIntent().getStringExtra("UserId"));
                     binding.HolidayDate1.setText(list.get(1).getHolidayDate());
                     binding.HolidayName1.setText(list.get(2).getHolidayName());
